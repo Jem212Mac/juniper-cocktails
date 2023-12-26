@@ -20,7 +20,7 @@ def get_feedback():
     print("Data should be six numbers, seperated by commas.")
     print("e.g.: 10, 9, 10, 8, 9, 8\n")
 
-    data_str = input("Enter your data here: ")
+    data_str = input("Enter your data here:\n")
     print(f"The data provided is {data_str}")
 
 get_feedback()
