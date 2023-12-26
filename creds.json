@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "junipercocktails",
+  "private_key_id": "036793737f239e8b8567bbd1109f7ae050bf7b10",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOxsqzQtWkdaJc\n4WAdqS6YyKAqLSmJAaR9NKt1I5Uo6iSgUzGcdD6ULboW5RXL2tTXJmGY4hp/dflr\nTyNp31/v9ifnsoPyTjj1gq2TpHdlQeMgk6oPzQX5QmDYHyo/tfYvRpk9Ui88msJc\nvrd98G239DtPY+IR7XdstO1fCx7Z85fqEFcC2r7Eo+IQ4niyvQ/dTdNtJiz9uCPs\nqRAEqR69W9Hxya/XYQE/MuNLqazuAWPolusMr5kxm2gAHcHSOGPobsIu+cSuO1oc\nQQRWtldOWmfX6GDlaQsGxVttEIAan2PWmVhU8SG+vbU5lcYdNDbuzbX9FkpA/JhV\nTGnNPxlzAgMBAAECggEAYRx1uEjsQ2fH0C080dFSBAk9R3Gcby7pTLA+0i3a8LM+\nblmEFEF33mm3WudOHEZy7XSmI4IVBcWnVSF+tUtmKDGIPkXVuCfKkmtED/IO7OxL\nulH/bZpRcuYcy4OfePqBW2ShtW3yp1jbbWlYjfor3VgDvt5fHyJSkyhJzvhPDfaD\n4DZotKU+cL7IYxnigkkdJ4tgWA3v7ooiHx3BfALthlFENKGkyaHGPvNUCrrxeN47\nNDUr/y/F349R15hJFgx5rhoOFDEXDM7nXNv0PlYGdGDnrWrw5JYi+oYu9MHpTCS2\nYnXdh/63b65LKIdOH0BpDS1SFdnPv8tSS65UwTAmGQKBgQD0iRPQOlVPa/qLrmGD\nkhARzjJJptzoSeLXGaL+htJYbDRajmdDUQROxHe9ijU/mLOu9NDGfGjBrPJ8D0Mp\n/BFDIauCDe64pFMn8rVLBuCyr0PZcaLPwtnzMJzKTkR2Txttc/CGdAgh+twwLmNM\n1K7jGTq+k/HAxP0FbvRALVwzvQKBgQDYeIfPRuVGcRAQZSm8k5VNCQGsED3oLzzB\nFRCGzTEDePZ5BxAjBaVzPIuyb1zSG6AIDj656DfUGvYUFMRlkEppm1LF+nDdun5F\n4FvU6AxdXP7RawhOl3vxHR7ubukyzrNxHWpU4u3gtpEs47gYVN4e/12gAq6ZqBaL\nrifJA5y87wKBgCH6Eeiy0juw0yUpW58+YkE3F0Goj7Uu3vfoNf+LmBp1HmketDZk\nQWb4YXLSi0eE3iKHHaMWki+m6iJWtIxW28cqHHx7lxnMq0k3rfz4vavWMmU6Jtcb\nSdFCheaOLXEK2NLCcz8bTC38fy+qol2Ah7RCQylLwSF5vXZNzl5EbzU5AoGBAJt7\nz4i5UnuLQE+WaikSFF41xuaw79Zy/39sQuegQMFOxDJgOV3+cz1XUrwCszgTMZo3\nqSRdQKRwDSqVVA/jWR+LuiOL5D/O8V39bdh6KE9zOXBwIZJZymOAWDRIo+WjhE4O\nI87/BH+wgowssJGBe93l7Hi/FGw3yKHhoKAIoS8vAoGAGMm6evK2VpQd+7ofIr8s\n7O2k7d+Vwl/Yx0OQEhFvJWBQMjpV1iNadlWF4HrHS4RNidBfE3ODeMYU28GvVWn+\nvr746J5c1+c15oLZSV9shoBBEwUZ3kqVTLuXcpddhZ+BI2+z50Kmvep9UgIoQXjW\nVo6uuAcz5LyWEbMLBgEqo1Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jemima@junipercocktails.iam.gserviceaccount.com",
+  "client_id": "113986783378259005854",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jemima%40junipercocktails.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
