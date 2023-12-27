@@ -21,7 +21,7 @@ def select_option():
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Analyse Feedback For All Feedback Criteria")
+    print("2. Analyse Feedback For All")
     print("3. Analyse Feedback By Location\n")
 
 select_option()
@@ -81,7 +81,7 @@ def get_average_scores_all():
     Calculates the average scores for each of the feedback criteria
     """
     print("Calculating average scores...\n")
-    
+
 
 def get_feedback_by_loc():
     """
