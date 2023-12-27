@@ -15,22 +15,41 @@ SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
 print("Please use this application to input, amend, or delete customer")
 print("feedback, or to analyse existing feedback.\n")
-print("Please choose from one of the following options:\n")
 
-print("1. Input Customer Feedback")
-print("2. Amend Customer Feedback")
-print("3. Delete Customer Feedback")
-print("4. Analyse All Feedback")
-print("5. Analyse Feedback By Location\n")
+def select_option():
+
+    print("Please select one of the following options and press enter:\n")
+
+    print("1. Input Customer Feedback")
+    print("2. Amend Customer Feedback")
+    print("3. Delete Customer Feedback")
+    print("4. Analyse All Feedback")
+    print("5. Analyse Feedback By Location\n")
+
+select_option()
+
+option = int(input())
 
 def input_feedback():
     """
     Input feedback from the customer
     """
-    print("Data should be six numbers, seperated by commas.")
-    print("e.g.: 10, 9, 10, 8, 9, 8\n")
+    print("Please enter a UK venue location (e.g. London, Edinburgh):")
+    location = str(input())
+    print("Please enter a score from 1-10 for Staff Friendliness:")
+    friend = int(input())
+    print("Please enter a score from 1-10 for Staff Professionalism:")
+    profess = int(input())
+    print("Please enter a score from 1-10 for the Venue:")
+    venue = int(input())
+    print("Please enter a score from 1-10 for Price / Value for Money:")
+    price = int(input())
+    print("Please enter a score from 1-10 for Quality:")
+    quality = int(input())
+    print("Please enter a score from 1-10 for Range / Variety of Cocktails:")
+    variety = int(input())
 
-    data_str = input("Enter your data here:\n")
-    print(f"The data provided is {data_str}")
+    print(f"You entered {location, friend, profess, venue, price, quality, variety}")
 
-input_feedback()
+if option == 1:
+    input_feedback()
