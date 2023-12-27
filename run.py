@@ -21,7 +21,7 @@ def select_option():
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Analyse All Feedback")
+    print("2. Analyse Feedback For the Last 5 Entries")
     print("3. Analyse Feedback By Location\n")
 
 select_option()
@@ -67,7 +67,14 @@ def feedback_all():
     """
     Analyse all feedback in worksheet
     """
-    print("You are analysing all feedback")
+    print("What would you like to do?\n")
+
+    print("1. Calculate the average scores for the last 5 entries")
+    print("2. Show the highest scores for the last 5 entries")
+    print("3. Show the lowest scores for the last 5 entries\n")
+
+    last_five = int(input())
+    print(last_five)
 
 def feedback_loc():
     """
