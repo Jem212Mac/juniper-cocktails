@@ -1,20 +1,17 @@
-Juniper Cocktails Customer Feedback Application
+# Juniper Cocktails Customer Feedback Application
 
-User Experience (UX)
-User Stories
+## User Stories
 
-Features
+## Features
 
-Deployment
+## Deployment
 
-Local Development
+## Local Development
 Codeanywhere was used as the IDE for local development of the application and GitHub was used for version control.
 
-Testing
+## Testing
 Details of the testing performed are included in the testing.md file.
 
-Credits
-Code Used
+## Credits
 
-Acknowledgments
-Templates for the readme.md and testing.md were based on ones created by Kera Cudmore at https://github.com/kera-cudmore/readme-examples.
+## Acknowledgments
