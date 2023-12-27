@@ -21,9 +21,8 @@ def select_option():
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Update Customer Feedback")
-    print("3. Analyse All Feedback")
-    print("4. Analyse Feedback By Location\n")
+    print("2. Analyse All Feedback")
+    print("3. Analyse Feedback By Location\n")
 
 select_option()
 
@@ -61,11 +60,6 @@ def input_feedback():
     feedback_worksheet = SHEET.worksheet("feedback")
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
-
-def update_feedback():
-    """
-    Update last customer feedback entered
-    """
 
 if option == 1:
     input_feedback()
