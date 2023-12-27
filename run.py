@@ -21,8 +21,8 @@ def select_option():
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Amend Customer Feedback")
-    print("3. Delete Customer Feedback")
+    print("2. Amend Last Customer Feedback Entered")
+    print("3. Delete Last Customer Feedback Entered")
     print("4. Analyse All Feedback")
     print("5. Analyse Feedback By Location\n")
 
