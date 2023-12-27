@@ -30,10 +30,13 @@ select_option()
 
 option = int(input())
 
+
+
 def input_feedback():
     """
     Input feedback from the customer
     """
+    feedback_dict = {}
     print("Please enter a UK venue location (e.g. London, Edinburgh):")
     location = str(input())
     print("Please enter a score from 1-10 for Staff Friendliness:")
@@ -48,8 +51,16 @@ def input_feedback():
     quality = int(input())
     print("Please enter a score from 1-10 for Range / Variety of Cocktails:")
     variety = int(input())
+    feedback_dict['location'] = location
+    feedback_dict['friend'] = friend
+    feedback_dict['profess'] = profess
+    feedback_dict['venue'] = venue
+    feedback_dict['price'] = price
+    feedback_dict['quality'] = quality
+    feedback_dict['variety'] = variety
 
-    print(f"You entered {location, friend, profess, venue, price, quality, variety}")
+    print(f"You entered {feedback_dict.values()}")
+
 
 if option == 1:
     input_feedback()
