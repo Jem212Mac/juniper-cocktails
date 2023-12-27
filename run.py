@@ -63,5 +63,21 @@ def input_feedback():
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
 
+def feedback_all():
+    """
+    Analyse all feedback in worksheet
+    """
+    print("You are analysing all feedback")
+
+def feedback_loc():
+    """
+    Analyses feedback in worksheet by location
+    """
+    print("You are analysing feedback by location")
+
 if option == 1:
     input_feedback()
+elif option == 2:
+    feedback_all()
+elif option == 3:
+    feedback_loc()
