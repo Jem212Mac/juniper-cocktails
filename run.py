@@ -36,7 +36,6 @@ def input_feedback():
     """
     Input feedback from the customer
     """
-    feedback_dict = {}
     print("Please enter a UK venue location (e.g. London, Edinburgh):")
     location = str(input())
     print("Please enter a score from 1-10 for Staff Friendliness:")
@@ -51,15 +50,15 @@ def input_feedback():
     quality = int(input())
     print("Please enter a score from 1-10 for Range / Variety of Cocktails:")
     variety = int(input())
-    feedback_dict['location'] = location
-    feedback_dict['friend'] = friend
-    feedback_dict['profess'] = profess
-    feedback_dict['venue'] = venue
-    feedback_dict['price'] = price
-    feedback_dict['quality'] = quality
-    feedback_dict['variety'] = variety
+    feedback_list = []
+    feedback_list.extend((location, friend, profess))
+    feedback_list.extend((venue, price, quality, variety))
 
-    print(f"You entered {feedback_dict.values()}")
+    print("Updating Juniper Cocktails Worksheet...\n")
+    feedback_worksheet = SHEET.worksheet("feedback")
+    feedback_worksheet.append_row(feedback_list)
+    print("Worksheet Updated Successfully.\n")
+
 
 
 if option == 1:
