@@ -21,7 +21,7 @@ def select_option():
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Analyse Feedback For the Last 5 Entries")
+    print("2. Analyse Feedback For All Feedback Criteria")
     print("3. Analyse Feedback By Location\n")
 
 select_option()
@@ -63,13 +63,27 @@ def input_feedback():
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
 
-def feedback_last_5():
+def get_feedback_all():
     """
-    Analyse last 5 entries in the feedback worksheet
+    Collects columns of data from the feedback worksheet, for each feedback 
+    criteria, returning the data as a list of lists.
     """
-    print("Analysing last 5 entries")
+    feedback_all = SHEET.worksheet("feedback")
+    
+    columns = []
+    for ind in range(2, 8):
+        column = feedback_all.col_values(ind)
+        columns.append(column)
+    return columns
 
-def feedback_loc():
+def get_average_scores_all():
+    """
+    Calculates the average scores for each of the feedback criteria
+    """
+    print("Calculating average scores...\n")
+    
+
+def get_feedback_by_loc():
     """
     Analyses feedback in worksheet by location
     """
@@ -78,6 +92,6 @@ def feedback_loc():
 if option == 1:
     input_feedback()
 elif option == 2:
-    feedback_last_5()
+    get_feedback_all()
 elif option == 3:
-    feedback_loc()
+    get_feedback_by_loc()
