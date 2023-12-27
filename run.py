@@ -13,8 +13,8 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
-print("Please use this application to input, amend, or delete customer")
-print("feedback, or to analyse existing feedback.\n")
+print("Please use this application to input new customer feedback,")
+print("or to analyse existing feedback.\n")
 
 def select_option():
 
