@@ -63,18 +63,11 @@ def input_feedback():
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
 
-def feedback_all():
+def feedback_last_5():
     """
-    Analyse all feedback in worksheet
+    Analyse last 5 entries in the feedback worksheet
     """
-    print("What would you like to do?\n")
-
-    print("1. Calculate the average scores for the last 5 entries")
-    print("2. Show the highest scores for the last 5 entries")
-    print("3. Show the lowest scores for the last 5 entries\n")
-
-    last_five = int(input())
-    print(last_five)
+    print("Analysing last 5 entries")
 
 def feedback_loc():
     """
@@ -85,6 +78,6 @@ def feedback_loc():
 if option == 1:
     input_feedback()
 elif option == 2:
-    feedback_all()
+    feedback_last_5()
 elif option == 3:
     feedback_loc()
