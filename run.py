@@ -12,10 +12,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
 
-print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
-print("Please use this application to input new customer feedback,")
-print("or to analyse existing feedback.\n")
-
 def select_option():
 
     print("Please select one of the following options and press enter:\n")
@@ -23,10 +19,6 @@ def select_option():
     print("1. Input Customer Feedback")
     print("2. Analyse Feedback For All")
     print("3. Analyse Feedback By Location\n")
-
-select_option()
-
-option = int(input())
 
 def input_feedback():
     """
@@ -82,16 +74,27 @@ def get_average_scores_all():
     """
     print("Calculating average scores...\n")
 
-
 def get_feedback_by_loc():
     """
     Analyses feedback in worksheet by location
     """
     print("You are analysing feedback by location")
 
-if option == 1:
-    input_feedback()
-elif option == 2:
-    get_feedback_all()
-elif option == 3:
-    get_feedback_by_loc()
+def main():
+    """
+    Run all program functions
+    """
+    select_option()
+    option = int(input())
+
+    if option == 1:
+        input_feedback()
+    elif option == 2:
+        get_feedback_all()
+    elif option == 3:
+        get_feedback_by_loc()
+
+print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
+print("Please use this application to input new customer feedback,")
+print("or to analyse existing feedback.\n")
+main()
