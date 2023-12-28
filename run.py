@@ -13,12 +13,14 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
 
 def select_option():
-
+    """
+    Provides the user with the option to either input new customer feedback, 
+    or to analyse existing feedback
+    """
     print("Please select one of the following options and press enter:\n")
 
     print("1. Input Customer Feedback")
-    print("2. Analyse Feedback For All")
-    print("3. Analyse Feedback By Location\n")
+    print("2. Analyse Existing Feedback\n")
 
 def input_feedback():
     """
@@ -55,7 +57,7 @@ def input_feedback():
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
 
-def get_feedback_all():
+def analyse_feedback():
     """
     Collects columns of data from the feedback worksheet, for each feedback 
     criteria, returning the data as a list of lists.
@@ -74,27 +76,19 @@ def get_average_scores_all():
     """
     print("Calculating average scores...\n")
 
-def get_feedback_by_loc():
-    """
-    Analyses feedback in worksheet by location
-    """
-    print("You are analysing feedback by location")
-
 def main():
     """
     Run all program functions
     """
     select_option()
     option = int(input())
-
+    
     if option == 1:
         input_feedback()
     elif option == 2:
-        get_feedback_all()
-    elif option == 3:
-        get_feedback_by_loc()
+        analyse_feedback()
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
-print("Please use this application to input new customer feedback,")
+print("Please use this application to either input new customer feedback,")
 print("or to analyse existing feedback.\n")
 main()
