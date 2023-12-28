@@ -48,9 +48,11 @@ def input_feedback():
     variety = int(input())
     print("Please enter your favourite cocktail at the venue:")
     cocktail = str(input())
+    print("Please enter any other feedback or comments the customer wishes to include:")
+    comment = str(input())
     feedback_list = []
     feedback_list.extend((location, friend, profess, venue))
-    feedback_list.extend((price, quality, variety, cocktail))
+    feedback_list.extend((price, quality, variety, cocktail, comment))
 
     print("Updating Juniper Cocktails Worksheet...\n")
     feedback_worksheet = SHEET.worksheet("feedback")
