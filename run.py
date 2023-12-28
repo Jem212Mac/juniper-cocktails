@@ -41,26 +41,37 @@ def input_feedback():
     """
     print("Please enter a Juniper Cocktails venue location (e.g. London):")
     location = str(input())
-    
     print("Please enter a score from 1-10 for Staff Friendliness,")
     print("with 1 being poor and 10 being excellent:")
-    
+
     while True:
         try:
             friend = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
-    
+            print("Please enter a number rather than a string.")
+        else:
+            if friend > 10:
+                print("Number must be less than or equal to 10")
+            elif friend < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
+            
     print("Please enter a score from 1-10 for Staff Professionalism,")
     print("with 1 being poor and 10 being excellent:")
 
     while True:
         try:
             profess = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
+            print("Please enter a number rather than a string.")
+        else:
+            if profess > 10:
+                print("Number must be less than or equal to 10")
+            elif profess < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
 
     print("Please enter a score from 1-10 for the Venue,")
     print("with 1 being poor and 10 being excellent:")
@@ -68,9 +79,15 @@ def input_feedback():
     while True:
         try:
             venue = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
+            print("Please enter a number rather than a string.")
+        else:
+            if venue > 10:
+                print("Number must be less than or equal to 10")
+            elif venue < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
 
     print("Please enter a score from 1-10 for Price / Value for Money,")
     print("with 1 being poor and 10 being excellent:")
@@ -78,9 +95,15 @@ def input_feedback():
     while True:
         try:
             price = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
+            print("Please enter a number rather than a string.")
+        else:
+            if price > 10:
+                print("Number must be less than or equal to 10")
+            elif price < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
 
     print("Please enter a score from 1-10 for Quality,")
     print("with 1 being poor and 10 being excellent:")
@@ -88,9 +111,15 @@ def input_feedback():
     while True:
         try:
             quality = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
+            print("Please enter a number rather than a string.")
+        else:
+            if quality > 10:
+                print("Number must be less than or equal to 10")
+            elif quality < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
 
     print("Please enter a score from 1-10 for Range / Variety of Cocktails,")
     print("with 1 being poor and 10 being excellent:")
@@ -98,9 +127,15 @@ def input_feedback():
     while True:
         try:
             variety = int(input())
-            break
         except ValueError:
-            print("Please enter a number between 1 and 10.")
+            print("Please enter a number rather than a string.")
+        else:
+            if variety > 10:
+                print("Number must be less than or equal to 10")
+            elif variety < 1:
+                print("Number must be greater than or equal to 1")
+            else:
+                break
 
     print("Please enter your favourite cocktail at the venue:")
     cocktail = str(input())
