@@ -41,24 +41,67 @@ def input_feedback():
     """
     print("Please enter a Juniper Cocktails venue location (e.g. London):")
     location = str(input())
+    
     print("Please enter a score from 1-10 for Staff Friendliness,")
     print("with 1 being poor and 10 being excellent:")
-    friend = int(input())
+    
+    while True:
+        try:
+            friend = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+    
     print("Please enter a score from 1-10 for Staff Professionalism,")
     print("with 1 being poor and 10 being excellent:")
-    profess = int(input())
+
+    while True:
+        try:
+            profess = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+
     print("Please enter a score from 1-10 for the Venue,")
     print("with 1 being poor and 10 being excellent:")
-    venue = int(input())
+
+    while True:
+        try:
+            venue = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+
     print("Please enter a score from 1-10 for Price / Value for Money,")
     print("with 1 being poor and 10 being excellent:")
-    price = int(input())
+
+    while True:
+        try:
+            price = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+
     print("Please enter a score from 1-10 for Quality,")
     print("with 1 being poor and 10 being excellent:")
-    quality = int(input())
+
+    while True:
+        try:
+            quality = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+
     print("Please enter a score from 1-10 for Range / Variety of Cocktails,")
     print("with 1 being poor and 10 being excellent:")
-    variety = int(input())
+
+    while True:
+        try:
+            variety = int(input())
+            break
+        except ValueError:
+            print("Please enter a number between 1 and 10.")
+
     print("Please enter your favourite cocktail at the venue:")
     cocktail = str(input())
     print("Please enter any other feedback or comments the customer wishes to include:")
