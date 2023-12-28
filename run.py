@@ -17,10 +17,19 @@ def select_option():
     Provides the user with the option to either input new customer feedback, 
     or to analyse existing feedback
     """
-    print("Please select one of the following options and press enter:\n")
+    while True:
+        print("Please select one of the following options and press enter:\n")
+        print("1. Input Customer Feedback")
+        print("2. Analyse Existing Feedback\n")
+        
+        option = int(input())
+        
+        if validate_data(option):
 
-    print("1. Input Customer Feedback")
-    print("2. Analyse Existing Feedback\n")
+            if option == 1:
+                input_feedback()
+            elif option == 2:
+                analyse_feedback()
 
 def input_feedback():
     """
@@ -70,7 +79,7 @@ def analyse_feedback():
     for ind in range(2, 8):
         column = feedback_all.col_values(ind)
         columns.append(column)
-    return columns
+    print(columns)
 
 def get_average_scores_all():
     """
@@ -78,17 +87,25 @@ def get_average_scores_all():
     """
     print("Calculating average scores...\n")
 
+def validate_data(value):
+    """
+    Checks whether data input is valid, and throws an exception if not
+    """
+    try:
+        if value != 1 and value != 2:
+            raise ValueError(
+                f"Incorrect value entered.  You entered {value}"
+            )
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
+        return False
+    return True
+
 def main():
     """
     Run all program functions
     """
     select_option()
-    option = int(input())
-    
-    if option == 1:
-        input_feedback()
-    elif option == 2:
-        analyse_feedback()
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
 print("Please use this application to either input new customer feedback,")
