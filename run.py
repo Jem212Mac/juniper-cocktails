@@ -22,14 +22,18 @@ def select_option():
         print("1. Input Customer Feedback")
         print("2. Analyse Existing Feedback\n")
         
-        option = int(input())
-        
-        if validate_data(option):
-
-            if option == 1:
-                input_feedback()
-            elif option == 2:
-                analyse_feedback()
+        try:
+            option = int(input())
+        except:
+            print("You did not enter a number, you entered a string.")
+            print("Please try again\n")
+        else:
+            if validate_data(option):
+                if option == 1:
+                    input_feedback()
+                elif option == 2:
+                    analyse_feedback()
+                break
 
 def input_feedback():
     """
@@ -99,6 +103,7 @@ def validate_data(value):
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
         return False
+
     return True
 
 def main():
@@ -110,4 +115,5 @@ def main():
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
 print("Please use this application to either input new customer feedback,")
 print("or to analyse existing feedback.\n")
+
 main()
