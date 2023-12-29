@@ -11,16 +11,16 @@ Juniper Cocktails would like to maintain a certain level of consistency across t
 
 ## User Stories
 
-As a User, I would like to be able to input customer feedback directly into the system, real-time, while the customer is still present at the venue.
-As a User, I would like to be able to input customer feedback from a paper-based survey completed by the customer before leaving the venue.
-As a User, I would like to be able to see the average scores, for each feedback criteria, for all Juniper Cocktails venues.
-As a User, I would like to be able to see the average scores, for each feedback criteria, for a specific Juniper Cocktails venue.
-As a User, I would like to be able to compare the average scores for a specific venue (e.g. my venue) with the average scores for all venues so that I can gain insight into what we are doing well and where we need to make improvements.
-As a User, I would like to be able to see the highest and lowest scores, for each feedback criteria, for all Juniper Cocktails venues.
-As a User, I would like to be able to see the highest and lowest scores, for each feedback criteria, for a specific Juniper Cocktails venue.
-As a User, I would like to be able to analyse the feedback data on a regular basis so that I can gain regular insights for potential improvements.
-As a User, I would like the system to update Google Sheets worksheets so that Juniper Cocktails stakeholders can review and analyse the feedback.
-As a User, I would like to be able to input the customer's favourite cocktail recipe so that we can ensure we keep a record of the most favourited cocktail per venue so we never remove this from the menu.
+* As a User, I would like to be able to input customer feedback directly into the system, real-time, while the customer is still present at the venue.
+* As a User, I would like to be able to input customer feedback from a paper-based survey completed by the customer before leaving the venue.
+* As a User, I would like to be able to see the average scores, for each feedback criteria, for all Juniper Cocktails venues.
+* As a User, I would like to be able to see the average scores, for each feedback criteria, for a specific Juniper Cocktails venue.
+* As a User, I would like to be able to compare the average scores for a specific venue (e.g. my venue) with the average scores for all venues so that I can gain insight into what we are doing well and where we need to make improvements.
+* As a User, I would like to be able to see the highest and lowest scores, for each feedback criteria, for all Juniper Cocktails venues.
+* As a User, I would like to be able to see the highest and lowest scores, for each feedback criteria, for a specific Juniper Cocktails venue.
+* As a User, I would like to be able to analyse the feedback data on a regular basis so that I can gain regular insights for potential improvements.
+* As a User, I would like the system to update Google Sheets worksheets so that Juniper Cocktails stakeholders can review and analyse the feedback.
+* As a User, I would like to be able to input the customer's favourite cocktail recipe so that we can ensure we keep a record of the most favourited cocktail per venue so we never remove this from the menu.
 
 
 ## Features
