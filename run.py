@@ -153,7 +153,7 @@ def input_feedback():
             else:
                 break
     print("Please enter any other customer feedback or comments:")
-    comment = str(input())
+    comment = str(input()).capitalize()
     feedback_list = []
     feedback_list.extend((location, friend, profess, venue))
     feedback_list.extend((price, quality, variety, cocktail, comment))
