@@ -32,6 +32,17 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 
 ## Testing
 
+I tested the data input for the initial 2 options presented to the user to ensure that the user can select only the number 1 or the number 2.  If the user inputs a string, an error is displayed (see below).
+
+If the user inputs any number other than 1 or 2 another error is displayed (see below).
+
+I tested the data input for the 'Input Customer Feedback' option.  I tested to ensure that when a feedback score is required, only an integer can be entered, not a string.  If I string is entered, the below error is displayed.
+
+I also tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, the below error is displayed.
+
+If a number greater than 10 is entered, the below error is displayed.
+
+
 ## Credits
 
 ## Acknowledgments
