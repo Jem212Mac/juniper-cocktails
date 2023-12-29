@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -32,8 +33,7 @@ def select_option():
                 if option == 1:
                     input_feedback()
                 elif option == 2:
-                    analyse_feedback()
-                break
+                    break
 
 
 def input_feedback():
@@ -142,8 +142,8 @@ def input_feedback():
     print("Please enter your favourite Juniper Cocktails signature cocktail")
     print("from the following list: Mai Tai, Long Island Iced Tea, Manhattan,")
     print("Negroni, Singapore Sling, or Pina Colada\n")
-    sig_cocktails = ["Mai Tai", "Long Island Iced Tea", "Manhattan", "Negroni",
-                     "Singapore Sling", "Pina Colada"]
+    sig_cocktails = ["Mai Tai   ", "Long Island Iced Tea", "Manhattan",
+                     "Negroni", "Singapore Sling", "Pina Colada"]
     while True:
         try:
             cocktail = str(input()).title()
@@ -165,7 +165,7 @@ def input_feedback():
     print("Worksheet Updated Successfully.\n")
 
 
-def analyse_feedback():
+def get_scores_by_criteria():
     """
     Collects columns of data from the feedback worksheet, for each feedback
     criteria, returning the data as a list of lists.
@@ -174,15 +174,27 @@ def analyse_feedback():
     columns = []
     for ind in range(2, 8):
         column = feedback_all.col_values(ind)
+        column.pop(0)
         columns.append(column)
-    print(columns)
+    return columns
 
 
-def get_average_scores_all():
+def calculate_averages_by_criteria(data):
     """
-    Calculates the average scores for each of the feedback criteria
+    Calculates the average score for each of the feedback criteria
     """
     print("Calculating average scores...\n")
+
+    average_feedback_data = []
+
+    for column in data:
+        int_column = [int(num) for num in column]
+        average = sum(int_column) / len(int_column)
+        average_feedback_data.append(round(average))
+    print("Updating Juniper Cocktails Averages Worksheet...\n")
+    feedback_worksheet = SHEET.worksheet("averages")
+    feedback_worksheet.append_row(average_feedback_data)
+    print("Worksheet Updated Successfully.\n")
 
 
 def validate_data(value):
@@ -206,6 +218,8 @@ def main():
     Runs all program functions.
     """
     select_option()
+    feedback_columns = get_scores_by_criteria()
+    calculate_averages_by_criteria(feedback_columns)
 
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
