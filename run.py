@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from pprint import pprint
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -12,28 +11,6 @@ CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
-
-
-def select_option():
-    """
-    Provides the user with the option to either input new customer feedback,
-    or to analyse existing feedback.
-    """
-    while True:
-        print("Please select one of the following options and press enter:\n")
-        print("1. Input Customer Feedback")
-        print("2. Analyse Existing Feedback\n")
-        try:
-            option = int(input())
-        except ValueError:
-            print("You did not enter a number, you entered a string.")
-            print("Please try again.\n")
-        else:
-            if validate_data(option):
-                if option == 1:
-                    input_feedback()
-                elif option == 2:
-                    break
 
 
 def input_feedback():
@@ -142,7 +119,7 @@ def input_feedback():
     print("Please enter your favourite Juniper Cocktails signature cocktail")
     print("from the following list: Mai Tai, Long Island Iced Tea, Manhattan,")
     print("Negroni, Singapore Sling, or Pina Colada\n")
-    sig_cocktails = ["Mai Tai   ", "Long Island Iced Tea", "Manhattan",
+    sig_cocktails = ["Mai Tai", "Long Island Iced Tea", "Manhattan",
                      "Negroni", "Singapore Sling", "Pina Colada"]
     while True:
         try:
@@ -159,7 +136,7 @@ def input_feedback():
     feedback_list = []
     feedback_list.extend((location, friend, profess, venue))
     feedback_list.extend((price, quality, variety, cocktail, comment))
-    print("Updating Juniper Cocktails Worksheet...\n")
+    print("Updating Juniper Cocktails Feedback Worksheet...\n")
     feedback_worksheet = SHEET.worksheet("feedback")
     feedback_worksheet.append_row(feedback_list)
     print("Worksheet Updated Successfully.\n")
@@ -197,32 +174,17 @@ def calculate_averages_by_criteria(data):
     print("Worksheet Updated Successfully.\n")
 
 
-def validate_data(value):
-    """
-    Checks whether data input from the user is valid, and raises an exception
-    if the data is not valid.
-    """
-    try:
-        if value != 1 and value != 2:
-            raise ValueError(
-                f"Incorrect value entered.  You entered {value}"
-            )
-    except ValueError as e:
-        print(f"Invalid data: {e}, please try again.\n")
-        return False
-    return True
-
-
 def main():
     """
     Runs all program functions.
     """
-    select_option()
+    input_feedback()
     feedback_columns = get_scores_by_criteria()
     calculate_averages_by_criteria(feedback_columns)
 
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
-print("Please use this application to input new customer feedback,")
-print("or to analyse existing feedback.\n")
+print("Please use this application to input new customer feedback")
+print("and compare it to average feedback from across all")
+print("Juniper Cocktails venues.\n")
 main()
