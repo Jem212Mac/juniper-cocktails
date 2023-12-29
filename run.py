@@ -142,13 +142,15 @@ def input_feedback():
     print("Please enter your favourite Juniper Cocktails signature cocktail")
     print("from the following list: Mai Tai, Long Island Iced Tea, Manhattan,")
     print("Negroni, Singapore Sling, or Pina Colada\n")
+    sig_cocktails = ["Mai Tai", "Long Island Iced Tea", "Manhattan", "Negroni",
+                     "Singapore Sling", "Pina Colada"]
     while True:
         try:
             cocktail = str(input()).title()
         except ValueError:
             print("Please input a cocktail from the signature list.")
         else:
-            if location not in venue_loc:
+            if cocktail not in sig_cocktails:
                 print("Please input a cocktail from the signature list.")
             else:
                 break
