@@ -41,8 +41,20 @@ def input_feedback():
     Allows the user to input customer feedback into the application
     and updates the feedback worksheet.
     """
-    print("Please enter a Juniper Cocktails venue location (e.g. London):")
-    location = str(input())
+    print("Please enter a Juniper Cocktails venue from the following:")
+    print("London, Manchester, Birmingham, Edinburgh, Glasgow, or Dundee\n")
+    venue_loc = ["London", "Manchester", "Birmingham", "Edinburgh",
+                 "Glasgow", "Dundee"]
+    while True:
+        try:
+            location = str(input()).title()
+        except ValueError:
+            print("Please input a valid location.")
+        else:
+            if location not in venue_loc:
+                print("Please input a valid location.")
+            else:
+                break
     print("Please enter a score from 1-10 for Staff Friendliness,")
     print("with 1 being poor and 10 being excellent:")
     while True:
@@ -127,8 +139,19 @@ def input_feedback():
                 print("Number must be greater than or equal to 1.")
             else:
                 break
-    print("Please enter your favourite cocktail at the venue:")
-    cocktail = str(input())
+    print("Please enter your favourite Juniper Cocktails signature cocktail")
+    print("from the following list: Mai Tai, Long Island Iced Tea, Manhattan,")
+    print("Negroni, Singapore Sling, or Pina Colada\n")
+    while True:
+        try:
+            cocktail = str(input()).title()
+        except ValueError:
+            print("Please input a cocktail from the signature list.")
+        else:
+            if location not in venue_loc:
+                print("Please input a cocktail from the signature list.")
+            else:
+                break
     print("Please enter any other customer feedback or comments:")
     comment = str(input())
     feedback_list = []
