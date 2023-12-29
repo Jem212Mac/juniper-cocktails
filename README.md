@@ -15,7 +15,7 @@ Juniper Cocktails would like to maintain a certain level of consistency across t
 * As a User, I would like to be able to input customer feedback from a paper-based survey completed by the customer before leaving the venue.
 * As a User, I would like to be able to compare the customer feedback scores I input to the average scores, for each feedback criteria, for all Juniper Cocktails venues so that I can monitor where improvements might be needed.
 * As a User, I would like the system to update Google Sheets worksheets so that senior Juniper Cocktails stakeholders can review and analyse the feedback to gain insights on where improvements may be needed.
-* As a User, I would like to be able to input the customer's favourite cocktail recipe so that Juniper Cocktails can record this to ensure we never remove this from the menu.
+* As a User, I would like to be able to input the customer's favourite cocktail recipe so that Juniper Cocktails can record this to ensure we never remove the most popular cocktails from our menu.
 
 
 ## Features
