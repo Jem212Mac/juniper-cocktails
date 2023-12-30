@@ -43,6 +43,8 @@ The application then uses this data to calculate the average feedback scores for
 
 The application then reads in the last rows of both the feedback worksheet and the averages worksheet and uses the data to calculate the difference between the scores.  The differences between the scores is displayed to the user to allow them to determine where improvements might be needed (see below).
 
+![Application 2](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/ba3ebb57-44c5-4e3d-86f2-28164a6c9d73)
+
 
 ## Deployment
 
