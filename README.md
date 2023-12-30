@@ -62,7 +62,7 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 
 ### Validator Testing
 
-![PEP8](./assets/images/PEP8.png)
+![PEP8](assets/images/PEP8.png)
 
 ## Future Enhancements
 
