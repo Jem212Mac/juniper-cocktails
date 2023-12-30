@@ -26,7 +26,7 @@ I originally created a rough flow chart diagram with pen and paper to decide wha
 ![Juniper Cocktails](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/d56823ab-423b-4fcf-904e-6a5738da4f27)
 
 
-The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails.  
+The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails. All data input is checked to ensure that it is valid, and if not, the user is asked to input the data again.  It should not be possible to input any invalid data.  In addition, valid data is 'tidied up' before it is added to any Google worksheets using the python 'title' and 'capitalize' methods. 
 
 
 ![Application 1](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/3b4ed2a0-bfaa-4ca7-aca6-056f13292928)
