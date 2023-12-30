@@ -22,7 +22,29 @@ Juniper Cocktails would like to maintain a certain level of consistency across t
 
 I originally created a rough flow chart diagram with pen and paper to decide what I wanted the application to do.  This flow chart diagram evolved over time as I decided to remove some features and add other features.  With CRUD operations in mind, I originally planned to add features that would allow a user of the application to amend or delete existing customer feedback.  However, I decided that in a real-world solution, Juniper Cocktails would not want to allow any user to be able to amend or delete existing data; this would be operations reserved only for Juniper Cocktails senior stakeholders, if needed, and they could easily perform these operations within the resulting Google Sheets worksheets.  Therefore I decided to remove these features.  The final flowchart was created using Lucid Chart (see below).
 
-The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails.  The user is also asked to input the customer's favourite Juniper Cocktails signature cocktail (from a list provided) and can input some free text as customer comments if required.  Once all of this data is gathered, the feedback worksheet of a Google Sheets form is updated with this data (see below).
+
+![Juniper Cocktails](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/d56823ab-423b-4fcf-904e-6a5738da4f27)
+
+
+The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails. All data input is checked to ensure that it is valid, and if not, the user is asked to input the data again.  It should not be possible to input any invalid data.  In addition, valid data is 'tidied up' before it is added to any Google worksheets using the python 'title' and 'capitalize' methods. 
+
+
+![Application 1](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/3b4ed2a0-bfaa-4ca7-aca6-056f13292928)
+
+
+The user is also asked to input the customer's favourite Juniper Cocktails signature cocktail (from a list provided) and can input some free text as customer comments if required.  Once all of this data is gathered, the feedback worksheet of a Google Sheets form is updated with this data (see below).
+
+
+![Feedback Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/e00f2ccc-fd54-4b0f-9335-90e36e040db6)
+
+The application then uses this data to calculate the average feedback scores for all input in the feedback worksheet and appends this to the averages worksheet (see below).
+
+![Averages Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/9da96637-56c7-4979-804d-e5dfc3e43d71)
+
+The application then reads in the last rows of both the feedback worksheet and the averages worksheet and uses the data to calculate the difference between the scores.  The differences between the scores is displayed to the user to allow them to determine where improvements might be needed (see below).
+
+![Application 2](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/ba3ebb57-44c5-4e3d-86f2-28164a6c9d73)
+
 
 ## Deployment
 
@@ -31,17 +53,22 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 
 ## Testing  
 
-I tested to ensure that when the venue is requested, only a valid venue from the list can be entered.  The venue can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid venue is entered, an error is displayed (see below).
+* I tested to ensure that when the venue is requested, only a valid venue from the list can be entered.  The venue can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid venue is entered, an error message is displayed.
+* I tested to ensure that when a feedback score is required, only an integer can be entered, not a string.  If I string is entered, an error is displayed.
+* I tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, an error is displayed.  If a number greater than 10 is entered, an error is displayed.
+* I tested to ensure that when the customers favourite signature cocktail is requested, only a valid cocktail from the list can be entered.  The cocktail can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid cocktail is entered, an error is displayed.
 
-I tested to ensure that when a feedback score is required, only an integer can be entered, not a string.  If I string is entered, the below error is displayed.
+### Bugs
 
-I also tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, the below error is displayed.
+### Validator Testing
 
-If a number greater than 10 is entered, the below error is displayed.
+## Future Enhancements
 
-I tested to ensure that when the customers favourite signature cocktail is requested, only a valid cocktail from the list can be entered.  The cocktail can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid cocktail is entered, an error is displayed (see below).
+## Credits & Acknowledgements
 
+At various moments during development, I used the following websites to check my understanding of how to use various python statements (for example, while true loops and try, except statements):
 
-## Credits
+* https://stackoverflow.com/
+* https://www.w3schools.com/
 
-## Acknowledgments
+I also referred back to the Code Institute Love Sandwiches walkthrough project, particularly as a reminder of how to use the Python zip() function.
