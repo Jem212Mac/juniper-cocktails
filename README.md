@@ -85,6 +85,12 @@ Code was run through the PEP validator (https://pep8ci.herokuapp.com/) and no is
 
 ## Future Enhancements
 
+Given additional time, I would like to add the following features to this application:
+
+1. I would add a timestamp when the feedback data is added to the feedback worksheet and use this to pull out the month and year so that the feedback data could be monitored on a monthly basis to check for patterns or issues.
+2. I would add the ability for the user to search to find the average score for each feedback criteria for their venue so they could check their average against the overall average scores.
+3. I would add the ability for the user to determine their average score for each criteria on a monthly basis.
+
 ## Credits & Acknowledgements
 
 At various moments during development, I used the following websites to check my understanding of how to use specific python statements (for example, while true loops and try, except statements):
