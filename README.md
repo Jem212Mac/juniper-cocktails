@@ -22,11 +22,21 @@ Juniper Cocktails would like to maintain a certain level of consistency across t
 
 I originally created a rough flow chart diagram with pen and paper to decide what I wanted the application to do.  This flow chart diagram evolved over time as I decided to remove some features and add other features.  With CRUD operations in mind, I originally planned to add features that would allow a user of the application to amend or delete existing customer feedback.  However, I decided that in a real-world solution, Juniper Cocktails would not want to allow any user to be able to amend or delete existing data; this would be operations reserved only for Juniper Cocktails senior stakeholders, if needed, and they could easily perform these operations within the resulting Google Sheets worksheets.  Therefore I decided to remove these features.  The final flowchart was created using Lucid Chart (see below).
 
+
 ![Juniper Cocktails](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/d56823ab-423b-4fcf-904e-6a5738da4f27)
 
-The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails.  The user is also asked to input the customer's favourite Juniper Cocktails signature cocktail (from a list provided) and can input some free text as customer comments if required.  Once all of this data is gathered, the feedback worksheet of a Google Sheets form is updated with this data (see below).
+
+The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails.  
+
+
+![Application 1](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/3b4ed2a0-bfaa-4ca7-aca6-056f13292928)
+
+
+The user is also asked to input the customer's favourite Juniper Cocktails signature cocktail (from a list provided) and can input some free text as customer comments if required.  Once all of this data is gathered, the feedback worksheet of a Google Sheets form is updated with this data (see below).
+
 
 ![Feedback Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/e00f2ccc-fd54-4b0f-9335-90e36e040db6)
+
 
 ## Deployment
 
