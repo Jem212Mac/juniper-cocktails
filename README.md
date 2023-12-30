@@ -58,12 +58,13 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 * I tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, an error is displayed.  If a number greater than 10 is entered, an error is displayed.
 * I tested to ensure that when the customers favourite signature cocktail is requested, only a valid cocktail from the list can be entered.  The cocktail can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid cocktail is entered, an error is displayed.
 
+## Future Enhancements
 
 ## Credits & Acknowledgements
 
 At various moments during development, I used the following websites to check my understanding of how to use various python statements (for example, while true loops and try, except statements):
 
-https://stackoverflow.com/
-https://www.w3schools.com/
+* https://stackoverflow.com/
+* https://www.w3schools.com/
 
 I also referred back to the Code Institute Love Sandwiches walkthrough project, particularly as a reminder of how to use the Python zip() function.
