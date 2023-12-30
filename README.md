@@ -88,7 +88,7 @@ The application was deployed to Heroku.  In order to deploy to Heroku, the follo
 ### Bugs
 
 1. Early on in the development process I realised that I had inadvertantly pushed my creds.json file to github.  I was well aware not to do this, but it happened by accident; the .gitignore file had been open in my IDE and I accidentally typed git into this file on the end of the creds.json filename, instead of into the terminal.  This resulted in the creds.json file being accidentally pushed to GitHub.  I fixed this by revoking the pushed credentials and creating new credentials and a new creds.json file after I had fixed the .gitignore file.
-2. After deploying my application to Heroku I discovered a bug whereby I could add anything as a favourit cocktail.  I realised this was because I reused the code I created for validation of the venue selection for validation of the cocktail selected, but I forgot to change all of the variable names.  I updated the code and this was resolved.
+2. After deploying my application to Heroku I discovered a bug whereby I could add anything as a favourite cocktail.  I realised this was because I reused the code I created for validation of the venue selection for validation of the cocktail selected, but I forgot to change all of the variable names.  I updated the code and this was resolved.
 3. On completion of testing, I am not aware of any unresolved bugs remaining in the code / application. 
 
 
