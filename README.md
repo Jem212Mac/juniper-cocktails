@@ -54,6 +54,11 @@ The application then reads in the last rows of both the feedback worksheet and t
 Codeanywhere was used as the IDE for local development of the application and GitHub was used for version control.
 
 
+## Forking
+
+If you would like to work on this code you can click on the repository here (https://github.com/Jem212Mac/juniper-cocktails) and click on 'Fork' to create your own fork of the code to work on.
+
+
 ## Deployment
 
 The application was deployed to Heroku.  In order to deploy to Heroku, the following steps were performed:
