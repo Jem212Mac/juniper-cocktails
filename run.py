@@ -136,10 +136,17 @@ def input_feedback():
     feedback_list = []
     feedback_list.extend((location, friend, profess, venue))
     feedback_list.extend((price, quality, variety, cocktail, comment))
-    print("Updating Juniper Cocktails Feedback Worksheet...\n")
-    feedback_worksheet = SHEET.worksheet("feedback")
-    feedback_worksheet.append_row(feedback_list)
-    print("Worksheet Updated Successfully.\n")
+    return feedback_list
+
+
+def update_worksheet(data, worksheet):
+    """
+    Updates the relevant worksheet with the data provided.
+    """
+    print(f"Updating {worksheet} worksheet...\n")
+    worksheet_to_update = SHEET.worksheet(worksheet)
+    worksheet_to_update.append_row(data)
+    print(f"{worksheet} worksheet updated successfully\n")
 
 
 def get_scores_by_criteria():
@@ -196,15 +203,16 @@ def calculate_diff():
 
     print(f"The difference between your scores")
     print(f"and the averages are: {feedback_diff}\n")
-    print("If your score differs by 5 or more, you should")
-    print("look to make improvements in this area\n")
+    print("If any of your scores are more than 3 below the average,")
+    print("you should look to make improvements in those areas\n")
 
 
 def main():
     """
     Runs all program functions.
     """
-    input_feedback()
+    data = input_feedback()
+    update_worksheet(data, "feedback")
     feedback_columns = get_scores_by_criteria()
     calculate_averages_by_criteria(feedback_columns)
     calculate_diff()
