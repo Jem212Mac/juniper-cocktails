@@ -63,9 +63,9 @@ The application was deployed to Heroku.  In order to deploy to Heroku, the follo
 3. From the Heroku dashboard I clicked 'Create new app' and input a unique name for the app, a region, and clicked 'create app'.
 4. I clicked on the Settings tab and went to the Config Vars section.
 5. I added 'CREDS' as a key and copied my credentials for my Google API in as the value and clicked 'Add'.
-6. You also added the key PORT and value 8000 to the Config Vars.
+6. I also added the key PORT and value 8000 to the Config Vars.
 7. I added two buildpacks; one for Python and one for Node.js, making sure they were listed in this order, with Python first, and Node.js second.
-8. I click on the 'Deploy' tab, chose Github as my deployment method, and searched for my github repository to connect.
+8. I clicked on the 'Deploy' tab, chose Github as my deployment method, and searched for my github repository to connect.
 9. For this project I chose to manually deploy at regular intervals.
 
 
