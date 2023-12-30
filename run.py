@@ -16,7 +16,7 @@ SHEET = GSPREAD_CLIENT.open('juniper_cocktails')
 def input_feedback():
     """
     Allows the user to input customer feedback into the application
-    and updates the feedback worksheet.
+    to update the feedback worksheet.
     """
     print("Please enter a Juniper Cocktails venue from the following:")
     print("London, Manchester, Birmingham, Edinburgh, Glasgow, or Dundee\n")
@@ -211,8 +211,8 @@ def main():
     """
     Runs all program functions.
     """
-    data = input_feedback()
-    update_worksheet(data, "feedback")
+    feedback_data = input_feedback()
+    update_worksheet(feedback_data, "feedback")
     feedback_columns = get_scores_by_criteria()
     calculate_averages_by_criteria(feedback_columns)
     calculate_diff()
