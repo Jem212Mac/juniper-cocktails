@@ -2,7 +2,7 @@
 
 Juniper Cocktails is an imaginary chain of cocktail bar's operating at various locations across the UK.
 
-The main purpose of this application is to allow a user (usually a staff member at one of Juniper Cocktails venues) to input customer feedback that will be recorded on a Google sheets feedback worksheet.  This feedback could be input in real-time by asking the customer specific questions while at the venue, or could be gathered and input from a paper-based survey completed by the customer before leaving the venue.
+The main purpose of this application is to allow a user (usually a franchisee owner or manager at one of Juniper Cocktails venues) to input customer feedback that will be recorded on a Google sheets feedback worksheet.  This feedback could be input in real-time by asking the customer specific questions while at the venue, or could be gathered and input from a paper-based survey completed by the customer before leaving the venue.
 
 The secondary purpose of the application is to provide the user with information on how the input feedback compares to average feedback scores across all Juniper Cocktails venues.
 
