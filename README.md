@@ -58,6 +58,10 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 * I tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, an error is displayed.  If a number greater than 10 is entered, an error is displayed.
 * I tested to ensure that when the customers favourite signature cocktail is requested, only a valid cocktail from the list can be entered.  The cocktail can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid cocktail is entered, an error is displayed.
 
+### Bugs
+
+### Validator Testing
+
 ## Future Enhancements
 
 ## Credits & Acknowledgements
