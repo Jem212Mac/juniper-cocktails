@@ -63,8 +63,12 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 * I tested to ensure that when a feedback score is required, only an integer can be entered, not a string.  If I string is entered, an error is displayed.
 * I tested to ensure that only a number between 1 and 10 can be entered.  If a number below 1 is entered, an error is displayed.  If a number greater than 10 is entered, an error is displayed.
 * I tested to ensure that when the customers favourite signature cocktail is requested, only a valid cocktail from the list can be entered.  The cocktail can be entered in capitals or lowercase, but will be recorded in the feedback worksheet in the 'title' format.  When an invalid cocktail is entered, an error is displayed.
+* I tested to ensure that any free text can be added as customer comments, including leaving this input empty if desired.
+* I tested to ensure that once all feedback data was input, the correct data, in the expected format, was appended to the feedback worksheet.
+* I tested to ensure that once all feedback data was input, the average scores for all feedback was appended to the averages worksheet.  I checked that these values were calculated correctly, and reported as rounded integers.
 
 ### Bugs
+
 
 ### Validator Testing
 
