@@ -67,7 +67,12 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 * I tested to ensure that once all feedback data was input, the correct data, in the expected format, was appended to the feedback worksheet.
 * I tested to ensure that once all feedback data was input, the average scores for all feedback was appended to the averages worksheet.  I checked that these values were calculated correctly, and reported as rounded integers.
 
+
 ### Bugs
+
+1. Early on in the development process I realised that I had inadvertantly pushed my creds.json file to github.  I was well aware not to do this, but it happened by accident; the .gitignore file had been open in my IDE and I accidentally typed git into this file on the end of the creds.json filename, instead of into the terminal.  This resulted in the creds.json file being accidentally pushed to GitHub.  I fixed this by revoking the pushed credentials and creating new credentials and a new creds.json file after I had fixed the .gitignore file.
+2. After deploying my application to Heroku I discovered a bug whereby I could add anything as a favourit cocktail.  I realised this was because I reused the code I created for validation of the venue selection for validation of the cocktail selected, but I forgot to change all of the variable names.  I updated the code and this was resolved.
+3. On completion of testing, I am not aware of any unresolved bugs remaining in the code / application. 
 
 
 ### Validator Testing
