@@ -174,6 +174,32 @@ def calculate_averages_by_criteria(data):
     print("Worksheet Updated Successfully.\n")
 
 
+def calculate_diff():
+    """
+    Calculates the difference between the input feedback scores
+    and the average scores across all venues.
+    """
+    print("Calculating difference between input scores")
+    print("and average scores...\n")
+    feedback_scores = SHEET.worksheet("feedback").get_all_values()
+    feedback_row = feedback_scores[-1]
+    feedback_row.pop(0)
+    feedback_row.pop(7)
+    feedback_row.pop(6)
+    average_scores = SHEET.worksheet("averages").get_all_values()
+    average_row = average_scores[-1]
+
+    feedback_diff = []
+    for averages, feedback in zip(average_row, feedback_row):
+        diff = int(feedback) - int(averages)
+        feedback_diff.append(diff)
+
+    print(f"The difference between your scores")
+    print(f"and the averages are: {feedback_diff}\n")
+    print("If your score differs by 5 or more, you should")
+    print("look to make improvements in this area\n")
+
+
 def main():
     """
     Runs all program functions.
@@ -181,6 +207,7 @@ def main():
     input_feedback()
     feedback_columns = get_scores_by_criteria()
     calculate_averages_by_criteria(feedback_columns)
+    calculate_diff()
 
 
 print("Welcome to Juniper Cocktails Customer Feedback Application.\n")
