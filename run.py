@@ -175,10 +175,7 @@ def calculate_averages_by_criteria(data):
         int_column = [int(num) for num in column]
         average = sum(int_column) / len(int_column)
         average_feedback_data.append(round(average))
-    print("Updating Juniper Cocktails Averages Worksheet...\n")
-    feedback_worksheet = SHEET.worksheet("averages")
-    feedback_worksheet.append_row(average_feedback_data)
-    print("Worksheet Updated Successfully.\n")
+    return average_feedback_data
 
 
 def calculate_diff():
@@ -202,7 +199,9 @@ def calculate_diff():
         feedback_diff.append(diff)
 
     print(f"The difference between your scores")
-    print(f"and the averages are: {feedback_diff}\n")
+    print(f"and the averages for staff friendliness,")
+    print(f"staff professionalism, venue, price, quality,") 
+    print(f"and variety are: {feedback_diff}\n")
     print("If any of your scores are more than 3 below the average,")
     print("you should look to make improvements in those areas\n")
 
@@ -214,7 +213,8 @@ def main():
     feedback_data = input_feedback()
     update_worksheet(feedback_data, "feedback")
     feedback_columns = get_scores_by_criteria()
-    calculate_averages_by_criteria(feedback_columns)
+    averages_data = calculate_averages_by_criteria(feedback_columns)
+    update_worksheet(averages_data, "averages")
     calculate_diff()
 
 
