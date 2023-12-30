@@ -182,6 +182,8 @@ def calculate_diff():
     """
     Calculates the difference between the input feedback scores
     and the average scores across all venues.
+    Use of zip() function taken from Love Sandwiches walkthrough
+    and modified for use below"
     """
     print("Calculating difference between input scores")
     print("and average scores...\n")
