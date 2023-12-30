@@ -26,6 +26,8 @@ I originally created a rough flow chart diagram with pen and paper to decide wha
 
 The application initially requests the user to 'Input Customer Feedback'; the user is faced with a number of questions to ensure that feedback is provided in a clear and consistent manner, focussing on specific feedback criteria; location, staff friendliness, staff professionalism, venue, price, quality and range/variety of cocktails.  The user is also asked to input the customer's favourite Juniper Cocktails signature cocktail (from a list provided) and can input some free text as customer comments if required.  Once all of this data is gathered, the feedback worksheet of a Google Sheets form is updated with this data (see below).
 
+![Feedback Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/e00f2ccc-fd54-4b0f-9335-90e36e040db6)
+
 ## Deployment
 
 ## Local Development
