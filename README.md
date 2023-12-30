@@ -37,6 +37,12 @@ The user is also asked to input the customer's favourite Juniper Cocktails signa
 
 ![Feedback Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/e00f2ccc-fd54-4b0f-9335-90e36e040db6)
 
+The application then uses this data to calculate the average feedback scores for all input in the feedback worksheet and appends this to the averages worksheet (see below).
+
+![Averages Worksheet](https://github.com/Jem212Mac/juniper-cocktails/assets/89839563/9da96637-56c7-4979-804d-e5dfc3e43d71)
+
+The application then reads in the last rows of both the feedback worksheet and the averages worksheet and uses the data to calculate the difference between the scores.  The differences between the scores is displayed to the user to allow them to determine where improvements might be needed (see below).
+
 
 ## Deployment
 
