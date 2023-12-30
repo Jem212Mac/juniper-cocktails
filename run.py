@@ -18,7 +18,7 @@ def input_feedback():
     Allows the user to input customer feedback into the application
     to update the feedback worksheet.
     """
-    print("Please enter a Juniper Cocktails venue from the following:")
+    print("Please enter a Juniper Cocktails venue from the following list:")
     print("London, Manchester, Birmingham, Edinburgh, Glasgow, or Dundee\n")
     venue_loc = ["London", "Manchester", "Birmingham", "Edinburgh",
                  "Glasgow", "Dundee"]
@@ -200,7 +200,7 @@ def calculate_diff():
 
     print(f"The difference between your scores")
     print(f"and the averages for staff friendliness,")
-    print(f"staff professionalism, venue, price, quality,") 
+    print(f"staff professionalism, venue, price, quality,")
     print(f"and variety are: {feedback_diff}\n")
     print("If any of your scores are more than 3 below the average,")
     print("you should look to make improvements in those areas\n")
