@@ -37,19 +37,25 @@ The user is also asked to input the customer's favourite Juniper Cocktails signa
 
 ![Feedback Worksheet](documentation/Feedback%20Worksheet.png)
 
+
 The application then uses this data to calculate the average feedback scores for all input in the feedback worksheet and appends this to the averages worksheet (see below).
+
 
 ![Averages Worksheet](documentation/Averages%20Worksheet.png)
 
+
 The application then reads in the last rows of both the feedback worksheet and the averages worksheet and uses the data to calculate the difference between the scores.  The differences between the scores is displayed to the user to allow them to determine where improvements might be needed (see below).
+
 
 ![Application2](documentation/Application%202.png)
 
 
-## Deployment
-
 ## Local Development
 Codeanywhere was used as the IDE for local development of the application and GitHub was used for version control.
+
+
+## Deployment
+
 
 ## Testing  
 
@@ -62,13 +68,17 @@ Codeanywhere was used as the IDE for local development of the application and Gi
 
 ### Validator Testing
 
+Code was run through the PEP validator (https://pep8ci.herokuapp.com/) and no issues were found (see below).
+
+
 ![PEP8](documentation/PEP8.png)
+
 
 ## Future Enhancements
 
 ## Credits & Acknowledgements
 
-At various moments during development, I used the following websites to check my understanding of how to use various python statements (for example, while true loops and try, except statements):
+At various moments during development, I used the following websites to check my understanding of how to use specific python statements (for example, while true loops and try, except statements):
 
 * https://stackoverflow.com/
 * https://www.w3schools.com/
